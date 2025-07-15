@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0f24; /* Dark Navy Blue */
+  color: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #14213d; /* Navy variant */
+  color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  color: #d6e4ff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #314e89;
+  background-color: #1c2541;
+  padding: 10px;
+  width: 200px;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  border-color: #4f83ff;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #7dafff;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+.product-detail {
+  padding: 20px;
+  background-color: #1c2541;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.product-detail h2, .product-detail h3, .product-detail p {
+  color: #ffffff;
+}
+
+.product-detail button {
+  background-color: #4f83ff;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-detail button:hover {
+  background-color: #81aaff;
+}
+
+.cart {
+  padding: 20px;
+  background-color: #1c2541;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.cart h2, .cart h3 {
+  color: #ffffff;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  padding: 10px 0;
+  border-bottom: 1px solid #314e89;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart button {
+  background-color: #4f83ff;
+  border: none;
+  padding: 5px 10px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #81aaff;
+}
