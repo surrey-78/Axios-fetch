@@ -6,15 +6,20 @@ const Home = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('https://fakestoreapi.com/products')
+    axios.get('http://localhost:5000/products')
       .then((res) => setProducts(res.data))
-      .catch((err) => console.error(err));
+      .catch((err) => console.error("Error fetching products:", err));
   }, []);
 
   return (
     <div className="product-grid">
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard key={product.id} product={{
+          id: product.id,
+          title: product.name,
+          price: product.price,
+          image: product.image_url
+        }} />
       ))}
     </div>
   );

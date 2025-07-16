@@ -1,0 +1,78 @@
+.add-product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #0a0f2c;
+  min-height: 100vh;
+}
+
+.add-product-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #131a3a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.add-product-card h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.add-product-form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #cdd2ff;
+}
+
+.add-product-form input,
+.add-product-form textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #f5f5f5;
+  font-size: 1rem;
+  color: #000;
+}
+
+.add-product-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.add-product-form button {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-product-form button:hover {
+  background-color: #2563eb;
+}
+
+@media (max-width: 480px) {
+  .add-product-card {
+    padding: 1.5rem;
+  }
+
+  .add-product-card h2 {
+    font-size: 1.5rem;
+  }
+}
